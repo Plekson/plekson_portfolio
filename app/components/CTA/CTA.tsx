@@ -9,7 +9,7 @@ const CTA = (props: Props) => {
   return (
     <a
       href={props.href}
-      className="text-lg p-4 border border-[#6ACFC7] cursor-pointer hover:bg-[#6ACFC7] duration-200 rounded"
+      className="text-lg px-4 py-4 border border-[#6ACFC7] cursor-pointer hover:bg-[#6ACFC7] duration-200 rounded"
     >
       {props.text}
     </a>

@@ -25,7 +25,7 @@ const Navbar = () => {
             Projects
           </a>
           <a
-            href="#"
+            href="#contact"
             className="hover:scale-[1.1] hover:text-[#6ACFC7] duration-200"
           >
             Contact

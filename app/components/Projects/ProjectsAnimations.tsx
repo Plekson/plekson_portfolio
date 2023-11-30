@@ -18,7 +18,6 @@ const ProjectsAnimations = () => {
         opacity: 1,
         scrollTrigger: {
           trigger: "#projects",
-          markers: true,
           start: "top 80%",
           end: "top top",
           scrub: true,

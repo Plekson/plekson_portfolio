@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectsAnimations from "./ProjectsAnimations";
+import CTA from "../CTA/CTA";
 
 const Projects = () => {
   return (
@@ -14,19 +15,43 @@ const Projects = () => {
       </div>
 
       <div className="works flex w-full">
-        <div className="left-side w-1/2">
-          <div className="h-screen flex items-center">
+        <div className="left-side w-1/2 pr-8">
+          <div className="h-screen flex flex-col justify-center gap-4 items-start">
             <h3>Project uno</h3>
+            <p className="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              earum possimus nostrum at sequi quas laborum laboriosam alias
+              optio consectetur repellendus beatae est nemo illum labore, velit
+              aperiam iusto illo nulla. Qui illum voluptatum quam maiores
+              ducimus consequatur facilis necessitatibus!
+            </p>
+            <CTA text="Code" />
           </div>
-          <div className="h-screen flex items-center">
+          <div className="h-screen flex flex-col justify-center gap-4 items-start">
             <h3>Project secondu</h3>
+            <p className="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              earum possimus nostrum at sequi quas laborum laboriosam alias
+              optio consectetur repellendus beatae est nemo illum labore, velit
+              aperiam iusto illo nulla. Qui illum voluptatum quam maiores
+              ducimus consequatur facilis necessitatibus!
+            </p>
+            <CTA text="Code" />
           </div>
-          <div className="h-screen flex items-center">
+          <div className="h-screen flex flex-col justify-center gap-4 items-start">
             <h3>Project tri</h3>
+            <p className="text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              earum possimus nostrum at sequi quas laborum laboriosam alias
+              optio consectetur repellendus beatae est nemo illum labore, velit
+              aperiam iusto illo nulla. Qui illum voluptatum quam maiores
+              ducimus consequatur facilis necessitatibus!
+            </p>
+            <CTA text="Code" />
           </div>
         </div>
         <div className="right-side w-1/2 h-screen sticky top-0 items-center flex">
-          <div className="right-side-bl h-96 w-full relative">
+          <div className="right-side-bl h-96 w-full relative hover:scale-105 duration-200">
             <div className="project-image absolute inset-0 aspect-video">
               <img
                 src="ecommerce.png"
