@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="container mx-auto px-4 flex">
       <HeroAnimations />;
-      <div className="head w-2/3">
+      <div className="head xl:w-2/3 w-full">
         <div className="flex flex-col gap-4 h-screen justify-center">
           <div className="hello-section">
             <h3 className="text-2xl leading-none opacity-0 text-[#6ACFC7]">
@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className="flex flex-col gap-4 h-screen justify-center w-3/4"
+          className="flex flex-col gap-4 h-screen justify-center xl:w-3/4"
           id="about"
         >
           <h4>
@@ -43,9 +43,14 @@ const Hero = () => {
             online experiences. Let's collaborate on shaping your unique digital
             presence!
           </h4>
+          <div className="xl:hidden flex justify-center items-center my-8">
+            <div className="image-section rounded-full overflow-x-hidden aspect-square opacity-0 w-96">
+              <img src="abdul.webp" alt="face" className="w-full h-full" />
+            </div>
+          </div>
         </div>
       </div>
-      <div className="w-1/3 flex justify-center h-screen items-center sticky top-0">
+      <div className="w-1/3 xl:flex hidden justify-center h-screen items-center sticky top-0">
         <div className="image-section rounded-full overflow-x-hidden aspect-square opacity-0">
           <img src="abdul.webp" alt="face" className="h-full" />
         </div>

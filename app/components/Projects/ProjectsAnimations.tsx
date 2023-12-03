@@ -9,6 +9,7 @@ const ProjectsAnimations = () => {
 
     const tl = gsap.timeline();
     const workItems = document.querySelectorAll(".project-image");
+    let mm = gsap.matchMedia();
 
     tl.fromTo(
       ".title",
@@ -50,6 +51,25 @@ const ProjectsAnimations = () => {
       end: "bottom bottom",
       animation: animation,
       scrub: 1,
+    });
+
+    mm.add("(max-width: 1024px)", () => {
+      const itemsArray = gsap.utils.toArray(".item");
+
+      itemsArray.forEach((item) => {
+        gsap.fromTo(
+          item as HTMLElement,
+          { y: 200, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            scrollTrigger: {
+              trigger: item as HTMLElement,
+              start: "top 90%",
+            },
+          }
+        );
+      });
     });
   }, []);
 
